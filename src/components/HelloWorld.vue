@@ -5,11 +5,11 @@ import { useCounterStore } from '@/stores/counter'
 defineProps({
   title: {
     type: String,
-    default: '',
+    default: ''
   },
   subtitle: {
     type: String,
-    default: '',
+    default: ''
   }
 })
 

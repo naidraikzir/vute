@@ -1,10 +1,11 @@
 module.exports = {
   env: {
-    node: true,
+    node: true
   },
   extends: [
     'eslint:recommended',
-    'plugin:vue/vue3-recommended'
+    'plugin:vue/vue3-recommended',
+    '@vue/standard'
   ],
   rules: {}
 }
