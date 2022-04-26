@@ -21,19 +21,32 @@ const counter = useCounterStore()
     <h1 class="font-bold text-5xl">
       {{ title }}
     </h1>
-    <h2 class="text-3xl mt-4">
+    <h2 class="text-3xl mt-4 mb-8">
       {{ subtitle }}
     </h2>
 
     <NButton
-      class="mt-8"
       type="success"
       size="large"
-      dashed
+      secondary
+      strong
       round
       @click="counter.increment"
     >
       count is: {{ counter.count }}
     </NButton>
+
+    <a
+      class="mt-8"
+      href="https://github.com/naidraikzir/vute"
+      aria-label="Check out the repo 🚀"
+      title="Check out the repo 🚀"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <NIcon size="32">
+        <IconGithub />
+      </NIcon>
+    </a>
   </div>
 </template>
